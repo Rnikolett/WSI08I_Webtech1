@@ -1,0 +1,167 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+header{
+    background-color: #4a0b0b;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #6e3535;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+footer {
+    background-color: #4a0b0b;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #4a0b0b;
+    border-radius: 2mm;
+}
+
+th {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+td {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5c2727;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #380505;
+}
+
+.navigation {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+
+.mainmenu,
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.mainmenu a:hover {
+    background-color: #6b1d1d;
+}
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+.submenu a {
+    text-align: right;
+}
+
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+}
+
+.submenu a:hover {
+    background-color: #6b1d1d;
+}
+
+#content {
+    float: left;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #4a0b0b;
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
